@@ -28,13 +28,21 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 /*
 |------------------------------------------------------------------------
+| Composer auto-loading
+|------------------------------------------------------------------------
+ */
+require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/includes/classes/ForniteClient.php';
+
+
+/*
+|------------------------------------------------------------------------
 | Load Translation Domain
 |------------------------------------------------------------------------
 |
 | Adds i18 Language Support
 */
-
-load_plugin_textdomain('flexyla', false, basename( dirname( __FILE__ ) ) . '/languages/');
+load_plugin_textdomain('wft', false, basename( dirname( __FILE__ ) ) . '/languages/');
 
 
 /*
@@ -51,7 +59,6 @@ require_once dirname(__FILE__) . '/functions.php';
 |--------------------------------------------------------------------------
 |
 */
-
 $activation_file   = dirname(__FILE__) . '/activate.php';
 $deactivation_file = dirname(__FILE__) . '/deactivate.php';
 

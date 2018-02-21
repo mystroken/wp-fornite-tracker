@@ -2,13 +2,21 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Don't allow direct access ?>
 
-<div class='redeem-gift-card'>
+<div class='wp-fornite-search-from'>
 
 	<form method='post'>
-		<label><strong><?php _e( 'Your gift card code', 'wordpress' ); ?></strong>
-			<input type='text' name='gift_card' id='gift-card-input'>
+		<label><input type="radio" name="wp_fornite_platform" value="pc"> PC</label>
+		<label><input type="radio" name="wp_fornite_platform" value="xbl"> Xbox one </label>
+		<label><input type="radio" name="wp_fornite_platform" value="psn"> Play Station</label>
+
+		<label>
+			<strong>
+				<?php _e( 'Stats Fornite', 'wft' ); ?>
+			</strong>
+			<input type='text' name='wp_fornite_uname' id='wp-fornite-uname-input'>
 		</label>
-		<input type='submit'>
+
+		<input type='submit' value="<?php _e('Afficher', 'wft'); ?>">
 	</form>
 
 </div>

@@ -1,0 +1,14 @@
+{
+    "name": "ken/wp-fornite-tracker",
+    "description": "A Fornite stats tracker for wordpress",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Emmanuel KWENE",
+            "email": "njume48@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    }
+}

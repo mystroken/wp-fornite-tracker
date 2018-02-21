@@ -61,7 +61,16 @@ if( !function_exists('wft_get_template') )
 	}
 }
 
+
+/**
+ * Shortcode search term
+ */
 function wft_fornite_search_shortcode() {
 	return wft_get_template('fornite-search.php');
 }
 add_shortcode('fornite_search', 'wft_fornite_search_shortcode');
+
+function wft_fornite_result_shortcode() {
+	return wft_get_template('fornite.php');
+}
+add_shortcode('fornite', 'wft_fornite_result_shortcode');
