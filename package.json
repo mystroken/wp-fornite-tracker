@@ -1,0 +1,35 @@
+{
+  "name": "wp-fornite-tracker",
+  "version": "1.0.0",
+  "description": "Fornite Stats tracker WordPress implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mystroken/wp-fornite-tracker.git"
+  },
+  "keywords": [
+    "php",
+    "wordpress",
+    "gulp",
+    "scss",
+		"fornite"
+  ],
+  "author": "Mystro Ken",
+  "license": "ISC",
+  "homepage": "https://github.com/mystroken/wp-fornite-tracker",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-filter": "^5.1.0",
+    "gulp-line-ending-corrector": "^1.0.2",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglifycss": "^1.0.9"
+  }
+}

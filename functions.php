@@ -61,6 +61,29 @@ if( !function_exists('wft_get_template') )
 	}
 }
 
+/**
+ * Enqueue style & script
+ */
+function wft_enqueue_script() {
+
+	// Enqueue stylesheet
+	wp_enqueue_style(
+		'fornite-tracker',
+		plugin_dir_url(__FILE__) . 'assets/css/main.min.css',
+		false
+	);
+
+	// Enqueue scripts
+	wp_enqueue_script(
+		'fornite-tracker-js',
+		plugin_dir_url(__FILE__) . 'assets/js/script.js',
+		array('jquery'),
+		'1.0',
+		true
+	);
+}
+add_action( 'wp_enqueue_scripts', 'wft_enqueue_script' );
+
 
 /**
  * Shortcode search term
@@ -70,6 +93,9 @@ function wft_fornite_search_shortcode() {
 }
 add_shortcode('fornite_search', 'wft_fornite_search_shortcode');
 
+/**
+ * Shortcode
+ */
 function wft_fornite_result_shortcode() {
 	return wft_get_template('fornite.php');
 }
