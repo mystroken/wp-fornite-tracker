@@ -1,16 +1,10 @@
-/*! Flexyla CSS v1.2 by @mystroken - http://www.mystroken.com License: MIT • mystroken@gmail.com */.site-logo{width:auto;height:60px}
-.mainnav a{text-transform:uppercase}
-.float-header .mainnav a{color:#702182 !important}
-.float-header .mainnav a:hover{color:#4b4b4b !important}
-.slide-item::before{content:'';position:absolute;left:0;top:0;width:100%;height:100%;background:rgba(22,59,100,0.4)}
-.button-slider:hover{color:#fff !important}
-.panel-grid-cell .widget-title{text-transform:none;font-weight:300;font-size:4rem}
-.widget_sydney_services_type_b .service .list-item{border:1px solid #fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;text-align:center;color:rgba(255,255,255,0.6)}
-.widget_sydney_services_type_b .service .list-item .service-thumb{float:none;max-width:100%;margin:0}
-.widget_sydney_services_type_b .service .list-item .content{padding:1rem}
-.site-sponsors{-webkit-box-align:end !important;-webkit-align-items:flex-end !important;-ms-flex-align:end !important;align-items:flex-end !important}
-.site-footer{text-align:center}
-.widget-area .widget_fp_social a:before{font-size:22px !important}
-.widget_fp_social .social-menu-widget{text-align:left !important}
-@media(min-width:601px){.panel-grid-cell .widget-title{font-size:5rem}
-}
+/*! Flexyla CSS v1.2 by @mystroken - http://www.mystroken.com License: MIT • mystroken@gmail.com */.dtr-stats-card:not(:first-of-type){margin-top:1rem}
+.dtr-stats-card .right{text-align:right}
+.dtr-stats-header,.trn-stats{padding:1rem}
+.dtr-stats-header{background:#919090;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+.dtr-stats-header .title{margin:0 auto;padding:0;color:inherit;font-size:100%;font-weight:bold}
+.trn-stats{background:#ddd;display:grid;grid-template-columns:repeat(4,1fr);grid-row-gap:1rem;grid-column-gap:3rem;-webkit-box-align:end;-webkit-align-items:end;-ms-flex-align:end;align-items:end}
+.stat .name,.trn-stat .name{font-size:75%}
+.stat .value,.trn-stat .value{font-weight:bold}
+.trn-percentile-bar{width:100%;height:4px;border-radius:2px;position:relative;background:#242424}
+.trn-percentile-bar .progress{position:absolute;top:0;left:0;height:100%;border-radius:2px;background:#009688}

@@ -20,3 +20,11 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Don't allow direct access ?>
 	</form>
 
 </div>
+
+<?php
+if( !empty($_REQUEST['wp_fornite_platform']) && !empty($_REQUEST['wp_fornite_uname']) ){
+
+	$platform = strip_tags($_REQUEST['wp_fornite_platform']);
+	$username = strip_tags($_REQUEST['wp_fornite_uname']);
+	include 'fornite-tracker.php';
+}

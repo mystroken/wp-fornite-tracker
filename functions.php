@@ -91,12 +91,4 @@ add_action( 'wp_enqueue_scripts', 'wft_enqueue_script' );
 function wft_fornite_search_shortcode() {
 	return wft_get_template('fornite-search.php');
 }
-add_shortcode('fornite_search', 'wft_fornite_search_shortcode');
-
-/**
- * Shortcode
- */
-function wft_fornite_result_shortcode() {
-	return wft_get_template('fornite.php');
-}
-add_shortcode('fornite', 'wft_fornite_result_shortcode');
+add_shortcode('fornite_tracker', 'wft_fornite_search_shortcode');
