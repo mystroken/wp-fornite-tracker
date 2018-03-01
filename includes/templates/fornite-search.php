@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Don't allow direct access ?>
 		<label><input type="radio" name="wp_fornite_platform" value="pc"> PC</label>
 		<label><input type="radio" name="wp_fornite_platform" value="xbl"> Xbox one </label>
 		<label><input type="radio" name="wp_fornite_platform" value="psn"> Play Station</label>
-
+		<br>
 		<label>
 			<strong>
 				<?php _e( 'Stats Fornite', 'wft' ); ?>

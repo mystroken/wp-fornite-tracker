@@ -29,6 +29,28 @@ if( isset($data->error) && $data->error !== null ): ?>
 
 <?php
 else:
+	$lifetimeStats = $data->lifeTimeStats;
+?>
+<div class="dtr-stats-card">
+	<div class="dtr-stats-header">
+		<div class="left">
+			<h2 class="title">Lifetime Stats:</h2>
+		</div>
+	</div>
+	<div class="trn-stats">
+<?php 
+	foreach ( $lifetimeStats as $s ){
+?>
+	<div class="trn-stat">
+		<div class="name"><?php echo $s->key; ?></div>
+		<div class="value"><?php echo $s->value; ?></div>
+	</div>
+<?php
+	}
+?>
+	</div>
+</div>		
+<?php
 
 	$solo = $data->stats->p2;//solos data
 	$duos = $data->stats->p10;//duos data
@@ -102,4 +124,90 @@ else:
 
 <?php
 	endforeach;
+	$recentMatches = $data->recentMatches;
+?>
+<div class="dtr-stats-card">
+	<div class="dtr-stats-header">
+		<div class="left">
+			<h2 class="title">Recent Matches:</h2>
+		</div>
+	</div>
+<?php 
+	foreach ( $recentMatches as $s ){
+?>
+	<div class="trn-stat">
+		<div class="result">
+			<span class="name">
+<?php
+	$result = 'Defeat';
+	if( $s->top25 >= 1 ){
+		$result = "Top 25";
+	}
+
+	if( $s->top12 >= 1 ){
+		$result = "Top 12";
+	}
+
+	if( $s->top10 >= 1 ){
+		$result = "Top 10";
+	}	
+
+	if( $s->top6 >= 1 ){
+		$result = "Top 6";
+	}
+
+	if( $s->top5 >= 1 ){
+		$result = "Top 5";
+	}
+
+	if( $s->top1 >= 1 ){
+		$result = "Winner";
+	}	
+
+	echo $result;
+?>
+			</span>
+		</div>
+		<div class="mode">
+			<span class="name">
+				MODE
+			</span>
+			<span class="value">
+<?php 
+			switch ($s->playlist ) {
+				case 'p2':
+					echo "SOLO";
+					break;
+				
+				case 'p9':
+					echo "DUO";
+					break;
+				
+				case 'p10':
+					echo "SQUAD";
+					break;
+				
+				default:
+					echo "unknown";
+					break;
+			}
+				$s->score 
+?>
+			</span>
+		</div>
+		<div class="score">
+			<span class="name">
+				SCORE
+			</span>
+			<span>
+				<?= $s->score ?>
+			</span>
+		</div>
+	</div>
+
+<?php
+	}
+?>
+</div>		
+<?php
 endif;
