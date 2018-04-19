@@ -69,7 +69,7 @@ function wft_enqueue_script() {
 	// Enqueue stylesheet
 	wp_enqueue_style(
 		'fornite-tracker',
-		plugin_dir_url(__FILE__) . 'assets/css/main.min.css',
+		plugin_dir_url(__FILE__) . 'assets/css/main.css',
 		false
 	);
 

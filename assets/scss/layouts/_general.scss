@@ -1,0 +1,121 @@
+
+$color-primary: #111111;
+
+.wp-fornite-results {
+	display: flex;
+
+	&__modes {
+		flex: 1 1 70%;
+		margin-right: 1rem;
+	}
+
+	&__summary {
+		flex: 1 1 30%;
+	}
+}
+
+.dtr-stats-card,
+.trn-card {
+	color: #FFF;
+
+	&:not(:first-of-type) {
+		margin-top: 1rem;
+	}
+
+	.right {
+		text-align: right;
+	}
+}
+
+.trn-card-header,
+.dtr-stats-header,
+.trn-stats,
+.top-stats {
+	padding: 1rem;
+}
+
+.trn-card-header,
+.dtr-stats-header,
+.top-stats {
+	background: #1b1b1b;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.title {
+		margin: 0 auto;
+		padding: 0;
+		color: inherit;
+		font-size: 100%;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+
+.stat-table,
+.trn-stats {
+	background: $color-primary;
+}
+
+.trn-stats {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-row-gap: 1rem;
+	grid-column-gap: 3rem;
+	align-items: end;
+
+	.pl-recent & {
+		grid-template-columns: 1fr;
+	}
+}
+
+.stat-table {
+	padding: .25rem 1rem;
+	display: table;
+	width: 100%;
+}
+
+.stat-title,
+.stat-value {
+	display: table-cell;
+}
+
+.stat-title {
+	width: 60%;
+}
+.stat-value {}
+
+.stat,
+.trn-stat {
+
+	.pl-recent & {
+		//display: flex;
+	}
+
+	.name {
+		font-size: 75%;
+		opacity: .75;
+	}
+	.value {
+		//font-family: 'Burbank Big Condensed', sans-serif;
+		//font-size: 1.3rem;
+		font-weight: bold;
+	}
+}
+
+.trn-percentile-bar {
+	width: 100%;
+	height: 4px;
+	border-radius: 2px;
+	position: relative;
+	background: #242424;
+
+	.progress {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		border-radius: 2px;
+		background: #009688;
+	}
+}

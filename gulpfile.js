@@ -12,11 +12,11 @@
 
 
  // Style configuration.
- var style_src               = './assets/styles/main.scss';
+ var style_src               = './assets/scss/main.scss';
  var style_dest              = './assets/css/';
 
  // Watch files paths.
- var style_watch_files       = './assets/styles/**/*.scss';
+ var style_watch_files       = './assets/scss/**/*.scss';
 
 
  // Browsers we care about for autoprefixing.

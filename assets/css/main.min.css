@@ -1,10 +1,20 @@
-/*! Flexyla CSS v1.2 by @mystroken - http://www.mystroken.com License: MIT • mystroken@gmail.com */.dtr-stats-card:not(:first-of-type){margin-top:1rem}
-.dtr-stats-card .right{text-align:right}
-.dtr-stats-header,.trn-stats{padding:1rem}
-.dtr-stats-header{background:#919090;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
-.dtr-stats-header .title{margin:0 auto;padding:0;color:inherit;font-size:100%;font-weight:bold}
-.trn-stats{background:#ddd;display:grid;grid-template-columns:repeat(4,1fr);grid-row-gap:1rem;grid-column-gap:3rem;-webkit-box-align:end;-webkit-align-items:end;-ms-flex-align:end;align-items:end}
-.stat .name,.trn-stat .name{font-size:75%}
+/*! Flexyla CSS v1.2 by @mystroken - http://www.mystroken.com License: MIT • mystroken@gmail.com */@font-face{font-family:'Burbank Big Condensed';font-style:normal;font-weight:700;src:local("Burbank Big Condensed Bold"),local("BurbankBigCondensed-Bold"),url("../../assets/fonts/BurbankBigCondensed-Bold.otf") format("opentype")}
+.wp-fornite-results{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.wp-fornite-results__modes{-webkit-box-flex:1;-webkit-flex:1 1 70%;-ms-flex:1 1 70%;flex:1 1 70%;margin-right:1rem}
+.wp-fornite-results__summary{-webkit-box-flex:1;-webkit-flex:1 1 30%;-ms-flex:1 1 30%;flex:1 1 30%}
+.dtr-stats-card,.trn-card{color:#FFF}
+.dtr-stats-card:not(:first-of-type),.trn-card:not(:first-of-type){margin-top:1rem}
+.dtr-stats-card .right,.trn-card .right{text-align:right}
+.trn-card-header,.dtr-stats-header,.trn-stats,.top-stats{padding:1rem}
+.trn-card-header,.dtr-stats-header,.top-stats{background:#1b1b1b;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+.trn-card-header .title,.dtr-stats-header .title,.top-stats .title{margin:0 auto;padding:0;color:inherit;font-size:100%;font-weight:bold;text-align:left}
+.stat-table,.trn-stats{background:#111}
+.trn-stats{display:grid;grid-template-columns:repeat(5,1fr);grid-row-gap:1rem;grid-column-gap:3rem;-webkit-box-align:end;-webkit-align-items:end;-ms-flex-align:end;align-items:end}
+.pl-recent .trn-stats{grid-template-columns:1fr}
+.stat-table{padding:.25rem 1rem;display:table;width:100%}
+.stat-title,.stat-value{display:table-cell}
+.stat-title{width:60%}
+.stat .name,.trn-stat .name{font-size:75%;opacity:.75}
 .stat .value,.trn-stat .value{font-weight:bold}
 .trn-percentile-bar{width:100%;height:4px;border-radius:2px;position:relative;background:#242424}
 .trn-percentile-bar .progress{position:absolute;top:0;left:0;height:100%;border-radius:2px;background:#009688}
