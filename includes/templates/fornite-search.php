@@ -6,7 +6,7 @@ if (! defined('ABSPATH')) {
 
 <div class='wp-fornite-search-from'>
 
-    <form method='post'>
+    <form method="get">
         <label><input type="radio" name="wp_fornite_platform" value="pc"> PC</label>
         <label><input type="radio" name="wp_fornite_platform" value="xbl"> Xbox one </label>
         <label><input type="radio" name="wp_fornite_platform" value="psn"> Play Station</label>
@@ -22,3 +22,7 @@ if (! defined('ABSPATH')) {
     </form>
 
 </div>
+
+<?php
+
+echo do_shortcode('[fornite_tracker_result]');

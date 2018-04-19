@@ -45,6 +45,8 @@ if (!function_exists('wft_get_template')) {
      */
     function wft_get_template($template_name, $args = [], $template_path = '', $default_path = '')
     {
+        ob_start();
+
         if (is_array($args) && isset($args)) :
             extract($args);
         endif;
@@ -55,7 +57,9 @@ if (!function_exists('wft_get_template')) {
             _doing_it_wrong(__FUNCTION__, sprintf('<code>%s</code> does not exist.', $template_file), '1.0.0');
         endif;
 
+
         include $template_file;
+        return ob_get_clean();
     }
 }
 
@@ -107,7 +111,10 @@ function wft_fornite_result_shortcode()
         $platform = strip_tags($_REQUEST['wp_fornite_platform']);
         $username = strip_tags($_REQUEST['wp_fornite_uname']);
 
-        $fornite_tracker_result_code = wft_get_template('fornite-tracker.php');
+        $fornite_tracker_result_code = wft_get_template('fornite-tracker.php', [
+            'platform' => $platform,
+            'username' => $username
+        ]);
     }
 
     return apply_filters('fornite_tracker_result', $fornite_tracker_result_code);

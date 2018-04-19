@@ -22,6 +22,7 @@ fclose($fp);
 
 $data = json_decode(file_get_contents("stats.json"));
 
+
 // Stop the script when there is an error
 if (isset($data->error) && $data->error !== null) : ?>
     <div style="color:red;">
